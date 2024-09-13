@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/HTML/Proyecto Final/Assets/icons8-gatito-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>HORARIO</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 50px 30px 0 30px;
+            font-family: sans-serif;
+
+
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 13px;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+            margin-top: 165px
+        }
+        .numero{
+            font-size:9px;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HORARIOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a 
+                       href="horario.html">Horario</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 style="margin: 15px;">Mi Horario: </h2>
+    <hr>
+
+    <div class="container">
+
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+            </colgroup>
+            <tr>
+                <th>&nbsp;</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td class="numero">7 - 9</td>
+            <td>Programacion Orientada a Objetos II</td>
+            <td>Sistemas Electronicos</td>
+            <td>Ingles Tecnico</td>
+            <td>Ingles Tecnico</td>
+            <td>Fisica II</td>
+        </tr>
+        <tr>
+            <td class="numero">9 - 11</td>
+            <td>Calculo Integral</td>
+            <td>Desarrollo Basado en Plataformas</td>
+            <td>Programacion Orientada a Objetos II</td>
+            <td>Desarrollo Basado en Plataformas</td>
+            <td>Estadistica</td>
+        </tr>
+        <tr>
+            <td class="numero">11-13</td>
+            <td>Sistemas Electronicos</td>
+            <td>Calculo Integral</td>
+            <td>Estadistica</td>
+            <td>Fisica II</td>
+            <td>Programacion Orientada a Objetos II</td>
+        </tr>
+    </table>
+</div>
+
+        
+
+
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/HTML/Proyecto Final/Assets/icons8-gatito-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>RECUERDOS</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            /* height: auto; */
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RECUERDOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Mis Recuerdos: </h2>
+
+    <div class="centrado">
+        <video class="centrado" src="/Proyecto Final/Assets/Videos/No Te Va Gustar ft. Julieta Venegas - Chau (Acústico) [Otras Canciones 2019].mp4" autoplay muted></video>
+
+    </div>
+
+    <div class="centrado">
+        <audio class="centrado" src="../Proyecto Final/Assets/Audio/No Te Va Gustar ft. Julieta Venegas - Chau (Acústico) [Otras Canciones 2019].mp3" autoplay controls></audio>
+
+    </div>
+
+    
+    <section class="centrado">
+        <div class="gallery">
+            <a href="../Proyecto Final/Assets/Imagenes/435340227_6900002773438397_8601917037903274986_n.jpg" target="_blank"><img src="../Proyecto Final/Assets/Imagenes/435340227_6900002773438397_8601917037903274986_n.jpg" alt="Pasña1" width="500" height="300"></a>
+            <div class="desc">Recuerdo 1</div>
+            
+        </div>
+
+        <div class="gallery">
+            <a href="../Proyecto Final/Assets/Imagenes/439437177_7006767132761960_2027686178812824389_n.jpg" target="_blank"><img src="../Proyecto Final/Assets/Imagenes/439437177_7006767132761960_2027686178812824389_n.jpg" alt="Pasña2" width="500" height="300"></a>
+            <div class="desc">Recuerdo 2</div>
+                
+        </div>
+
+        <div class="gallery">
+            <a href="../Proyecto Final/Assets/Imagenes/445248086_7131059733666032_8942727689957928378_n.jpg" target="_blank"><img src="../Proyecto Final/Assets/Imagenes/445248086_7131059733666032_8942727689957928378_n.jpg" alt="Pasña3" width="500" height="300"></a>
+            <div class="desc">Recuerdo 3</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+</html>
